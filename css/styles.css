@@ -11054,7 +11054,7 @@ p {
 
 .lightbox-gallery
 {
-  background-image: linear-gradient(white, blue);
+  background-image: none;
   background-repeat: no-repeat;
   color: #000;
   overflow-x: hidden
