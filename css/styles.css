@@ -42,7 +42,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 230, 167, 86;
+  --bs-primary-rgb: 44, 134, 142;
   --bs-secondary-rgb: 47, 23, 15;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -61,8 +61,8 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-color: #2C4044;
+  --bs-body-bg: #B7D0D4;
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -73,8 +73,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #e6a756;
-  --bs-link-hover-color: #b88645;
+  --bs-link-color: #497274;
+  --bs-link-hover-color: #497274;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -247,7 +247,7 @@ sup {
 
 a {
   color: var(--bs-link-color);
-  text-decoration: underline;
+  text-decoration:none;
 }
 a:hover {
   color: var(--bs-link-hover-color);
@@ -604,7 +604,7 @@ progress {
 }
 
 #intro-image{
-  max-width: 30%;
+  max-width: 50%;
   height: auto;
 }
 
@@ -2870,19 +2870,19 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #000;
-  --bs-btn-bg: #e6a756;
-  --bs-btn-border-color: #e6a756;
+  --bs-btn-bg: #2C868E;
+  --bs-btn-border-color: #2C868E;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #eab46f;
-  --bs-btn-hover-border-color: #e9b067;
+  --bs-btn-hover-bg: #2C868E;
+  --bs-btn-hover-border-color: #2C868E;
   --bs-btn-focus-shadow-rgb: 196, 142, 73;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #ebb978;
-  --bs-btn-active-border-color: #e9b067;
+  --bs-btn-active-bg: #2C868E;
+  --bs-btn-active-border-color: #2C868E;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: #e6a756;
-  --bs-btn-disabled-border-color: #e6a756;
+  --bs-btn-disabled-bg: #2C868E;
+  --bs-btn-disabled-border-color: #2C868E;
 }
 
 .btn-secondary {
@@ -10861,15 +10861,19 @@ p {
 }
 
 .text-faded {
-  color: #f6e1c5;
+  color: #2C868E;
+}
+
+.text-faded2 {
+  color: #C6F2F3;
 }
 
 .site-heading {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   text-transform: uppercase;
   line-height: 1;
-  font-family: "Henny Penny",serif;
+  font-family: "Calibri",serif;
 }
 .site-heading .site-heading-upper {
   display: block;
@@ -10883,8 +10887,8 @@ p {
 }
 
 .page-section {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .section-heading {
@@ -10902,7 +10906,11 @@ p {
 }
 
 .bg-faded {
-  background-color: #f6e1c5;
+  background-color: #A7F0E7;
+}
+
+.bg-faded2 {
+  background-color: #C6F2F3;
 }
 
 .btn-xl {
@@ -10915,18 +10923,18 @@ p {
 }
 
 #mainNav {
-  background-color: rgba(47, 23, 15, 0.9);
+  background-color: #0D515C;
   font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 #mainNav .navbar-brand {
-  color: #e6a756;
+  color: #A7F0E7;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   color: rgba(255, 255, 255, 0.7);
   font-weight: 800;
 }
 #mainNav .navbar-nav .nav-item.active .nav-link {
-  color: #e6a756;
+  color: #A7F0E7;
 }
 @media (min-width: 992px) {
   #mainNav .navbar-nav .nav-item .nav-link {
@@ -10950,7 +10958,19 @@ p {
     z-index: 0;
   }
   .about-heading .about-heading-content {
-    margin-top: -5rem;
+    margin-top: 5rem;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .data-heading .data-heading-img {
+    position: relative;
+    z-index: 0;
+  }
+  .data-heading .data-heading-content {
+    margin-top: 5rem;
     position: relative;
     z-index: 1;
   }
@@ -10959,7 +10979,7 @@ p {
 .cta {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: rgba(230, 167, 86, 0.9);
+  background-color: #0D515C;
 }
 .cta .cta-inner {
   position: relative;
@@ -10979,7 +10999,7 @@ p {
 }
 
 .footer {
-  background-color: rgba(47, 23, 15, 0.9);
+  background-color: #0D515C;
 }
 
 .intro {
@@ -11054,6 +11074,7 @@ p {
 
 .lightbox-gallery
 {
+  background-image: linear-gradient(white, blue);
   background-repeat: no-repeat;
   color: #000;
   overflow-x: hidden
@@ -11102,4 +11123,52 @@ color:black;
   font-family: "Henny Penny", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.footer-link{
+  color: #C6F2F3;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.portfolio-menu{
+	text-align:center;
+}
+.portfolio-menu ul li{
+	display:inline-block;
+	margin:0;
+	list-style:none;
+	padding:10px 15px;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+	transition:all .5s ease;
+}
+
+.portfolio-item{
+	/*width:100%;*/
+}
+.portfolio-item .item{
+	/*width:303px;*/
+	float:left;
+	margin-bottom:10px;
 }
